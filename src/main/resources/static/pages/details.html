@@ -1,0 +1,46 @@
+<div class="container" style="padding: 40px;">
+    <div class="page-header">
+        <h4>Book Detail</h4>
+    </div>
+    <div class="form-horizontal" >
+        <div class="form-group">
+            <div class="col-md-5 col-md-offset-1">
+                <img ng-src="./images/actuals/{{book.asin}}.jpg" style="width:340px;height:450px;"
+                         alt="{{book.title}}">
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <h2>
+                        <b>Title:</b> {{book.title}}
+                    </h2>
+                </div>
+                <div class="row">
+                    <p>
+                        <b>Authors:</b> {{book.authors}}
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        <b>Published at:</b> {{book.published_at}}
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        <b>ISBN:</b> {{book.isbns}}
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        <b>ASIN:</b> {{book.asin}}
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        <b>Description:</b> {{book.title + '---'+book.authors}}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
